@@ -54,7 +54,7 @@ flowchart LR
 5. Frontend displays results.
 
 
-### 3.2 Architecture: Agent Architecture:
+### 3.2 Architecture: Agent Architecture
 
 Multi-Agent Horizontal (Linear) Unidirectional Architecture
 
@@ -193,7 +193,7 @@ Timeouts and retries on external calls (tenacity), and minimal CORS configuratio
 
 - Tools Used:
 
-[![Tools](https://skillicons.dev/icons?i=python,fastapi,react,langgraph,gemini,serpapi,vscode,github,&theme=light)](https://skillicons.dev)
+[![Tools](https://skillicons.dev/icons?i=python,fastapi,react,vscode,&theme=light)](https://skillicons.dev)
 
 
 - Cloud and software used:
