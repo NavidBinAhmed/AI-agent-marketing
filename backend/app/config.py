@@ -16,7 +16,9 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     
     # CORS
-    cors_origins: List[str] = ["http://localhost:3000", "http://localhost:5173"]
+    cors_origins = [
+    "https://marketing-mba-frontend.onrender.com",
+    "http://localhost:3000"]
     
     # Request limits
     max_prompt_length: int = 10000
