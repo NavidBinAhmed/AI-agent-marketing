@@ -19,48 +19,8 @@ This repository contains a LangGraph-based AI agent for performing a marketing o
 ![alt text](resource/demo_agent_marketing.gif)
 
 
-## 3. Tools & Software Used
-
-- Tools Used:
-
-[![Tools](https://skillicons.dev/icons?i=python,fastapi,react,langgraph,gemini,serpapi,vscode,github,&theme=light)](https://skillicons.dev)
-
-
-- Cloud and software used:
-
-1. [Render Account](https://render.com/)
-2. [VS Code IDE](https://code.visualstudio.com/)
-3. [GitHub](https://github.com/NavidBinAhmed/)
-4. [Mermaid](https://www.mermaidchart.com/)
-5. Virtual/AI Assitants (claude, chatGPT, YouTube)
-
-
-### 3.1 Usefulness of AI Assistants: Speed, Modernization, and Reliability
-
-- Quick error handling and finding solution. Multiple solutions are provided from which the most acceptable solution was applied for a robust and fastest development
-
-- Check for security vulnerabilities. SQL injection and other threats may occur and so a thorough security analysis was done based on the best practices and advanced tentative solutions. However, most of which is associated to ‘further extension’, in a later section
-
-- Embracing what is out of idea. Learning is life-long. AI Assistants help gain a speedy learning curve easily, to the point, and on-the-go. Better than boring video tutorials or books.
-
--  `Example prompt 1`: while working with a paid old OpenAI API
-I use paid openai api which is no longer accessible. Kindly share alternative free apis that should work.
-
--  `Example prompt 2`: while interfacing and validating output on the React UI
-In FastAPI Full Stack project, one API associated with research agent works fine. But another agent’s output - analysis marketing insights/summary associated with another OpenAI API is missing. Suggest what causes the issue and recommend solution?
-
-
-### 3.2 Reasons for Choosing Specific AI Assistants
-
-- `ChatGPT`: easier to access, has a freemium version. Useful for everyday use-cases. I love it because it knows about me more than that I do. (Laughing out loud) 
-
-- `Claude.AI`: Better for software dev, as it illustrates a solution graphically. Easier to catch the underlying concepts on Claude. But very limited access in freemium version.
-
-- `Other Tools/Sites`: Google is the best friend! Search results came up with the personalized solutions in AI mode version.
-
-
-## 4. Architecture
-### 4.1 Architecture: Full-Stack System Architecture
+## 3. Architecture
+### 3.1 Architecture: Full-Stack System Architecture
 
 Mermaid flow:
 
@@ -78,7 +38,7 @@ flowchart LR
 ```
 
 
-#### 4.1.1 How it works (end-to-end)
+#### 3.1.1 How it works (end-to-end)
 
 1. Frontend (React) sends POST `/analyze` with a natural language prompt.
 
@@ -94,7 +54,7 @@ flowchart LR
 5. Frontend displays results.
 
 
-### 4.2 Architecture: Agent Architecture:
+### 3.2 Architecture: Agent Architecture:
 
 Multi-Agent Horizontal (Linear) Unidirectional Architecture
 
@@ -105,7 +65,7 @@ Some major takeaways:
 - The graph enforces deterministic execution in linear and forwarding order.
 
 
-#### 4.2.1 Agent Nodes & responsibilities
+#### 3.2.1 Agent Nodes & responsibilities
  **Input Processing (root):** 
  - Receives validated input from user, orchestrates subgraphs, maintains explicit `state` dict and `thought_trace`. Handles concurrency control for external calls.
 
@@ -124,7 +84,7 @@ Some major takeaways:
 - Displays output on the UI
 
 
-#### 4.2.2 Agent State schema (explicit)
+#### 3.2.2 Agent State schema (explicit)
 `state` is a nested dict recorded across subgraphs:
 ```json
 {
@@ -136,7 +96,7 @@ Some major takeaways:
 ```
 
 
-## 5. Design Choices & Trade-offs
+## 4. Design Choices & Trade-offs
 
 **a.**	`Architecture`: For agent, a simple linear horizontal architecture suits the purpose as the requirement is pretty straightforward with no backward dependencies. 
 
@@ -171,7 +131,7 @@ State captures raw inputs/outputs per subgraph — this is critical for auditabi
 - `Trade-off`: Incorporated exception-handling and with extended edge cases it can be matured. 
 
 
-## 6. Strong Aspects : Full-Stack Multi-Agent Marketing Intelligence
+## 5. Strong Aspects : Full-Stack Multi-Agent Marketing Intelligence
 
 - **a.** `Production-grade Full-Stack Code`: modular, clean and reusable code. Attention was given to address exceptions gracefully.
 
@@ -187,7 +147,7 @@ Full-stack development (end-to-end) has been carried out maintaining high calibe
 Timeouts and retries on external calls (tenacity), and minimal CORS configuration have been enabled (recommended OAuth (JWT/API key) for production).
 
 
-## 7. Scope of improvement for production : Possible Extension
+## 6. Scope of improvement for production : Possible Extension
 
 **a.** `DataBase, Memory Storage & Caching Integration:`
 - yes, cache results from APIs for repeated prompts can be used in DB.
@@ -227,6 +187,46 @@ Timeouts and retries on external calls (tenacity), and minimal CORS configuratio
 - PDF extractor
 - Secure sign-in to use the platform for limiting unauthorized access
 - Save previous prompts and enable auto-suggestions
+
+
+## 7. Tools & Software Used
+
+- Tools Used:
+
+[![Tools](https://skillicons.dev/icons?i=python,fastapi,react,langgraph,gemini,serpapi,vscode,github,&theme=light)](https://skillicons.dev)
+
+
+- Cloud and software used:
+
+1. [Render Account](https://render.com/)
+2. [VS Code IDE](https://code.visualstudio.com/)
+3. [GitHub](https://github.com/NavidBinAhmed/)
+4. [Mermaid](https://www.mermaidchart.com/)
+5. Virtual/AI Assitants (claude, chatGPT, YouTube)
+
+
+### 7.1 Usefulness of AI Assistants: Speed, Modernization, and Reliability
+
+- Quick error handling and finding solution. Multiple solutions are provided from which the most acceptable solution was applied for a robust and fastest development
+
+- Check for security vulnerabilities. SQL injection and other threats may occur and so a thorough security analysis was done based on the best practices and advanced tentative solutions. However, most of which is associated to ‘further extension’, in a later section
+
+- Embracing what is out of idea. Learning is life-long. AI Assistants help gain a speedy learning curve easily, to the point, and on-the-go. Better than boring video tutorials or books.
+
+-  `Example prompt 1`: while working with a paid old OpenAI API
+I use paid openai api which is no longer accessible. Kindly share alternative free apis that should work.
+
+-  `Example prompt 2`: while interfacing and validating output on the React UI
+In FastAPI Full Stack project, one API associated with research agent works fine. But another agent’s output - analysis marketing insights/summary associated with another OpenAI API is missing. Suggest what causes the issue and recommend solution?
+
+
+### 7.2 Reasons for Choosing Specific AI Assistants
+
+- `ChatGPT`: easier to access, has a freemium version. Useful for everyday use-cases. I love it because it knows about me more than that I do. (Laughing out loud) 
+
+- `Claude.AI`: Better for software dev, as it illustrates a solution graphically. Easier to catch the underlying concepts on Claude. But very limited access in freemium version.
+
+- `Other Tools/Sites`: Google is the best friend! Search results came up with the personalized solutions in AI mode version.
 
 
 ## 8. Run the Project Locally
