@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     serpapi_api_key: str
     
     # Environment - kept development as of now (change to production later)
-    environment: str = "development"
+    environment: str = "production"
     log_level: str = "INFO"
     
     # CORS
