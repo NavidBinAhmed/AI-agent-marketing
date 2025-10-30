@@ -15,10 +15,10 @@ class Settings(BaseSettings):
     environment: str = "production"
     log_level: str = "INFO"
     
-    # CORS
-    cors_origins = [
-    "https://marketing-mba-frontend.onrender.com",
-    "http://localhost:3000"]
+    
+    cors_origins: List[str] = [
+        "https://marketing-mba-frontend.onrender.com",
+        "http://localhost:3000"]
     
     # Request limits
     max_prompt_length: int = 10000
