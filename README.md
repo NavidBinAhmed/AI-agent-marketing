@@ -1,4 +1,4 @@
-# Full-Stack Marketing.MBA LangGraph Agent using FastAPI and React
+# Full-Stack Marketing.MBA LangGraph Agent using FastAPI, React, and Render
 
 ## 1. Overview 
 
