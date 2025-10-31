@@ -18,6 +18,7 @@ This repository contains a LangGraph-based AI agent for performing a marketing o
 
 ![alt text](resource/demo_agent_marketing.gif)
 
+Deployed Live [**Link**](https://magent.onrender.com/), Backend [**Link**](https://marketing-mba-backend.onrender.com/)
 
 ## 3. Architecture
 ### 3.1 Architecture: Full-Stack System Architecture
