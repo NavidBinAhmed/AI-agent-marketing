@@ -1,5 +1,4 @@
-// frontend/src/App.jsx
-// LangGraph-style UI adapted to work with your existing backend
+// LangGraph-style UI adapted to work with existing backend
 
 import React, { useState, useEffect } from 'react';
 import { Play, RefreshCw, CheckCircle, Loader, AlertCircle, Wifi, WifiOff, TrendingUp, Globe } from 'lucide-react';
@@ -25,7 +24,7 @@ const MarketingAgentSimulator = () => {
   // Check backend connection
   const checkBackend = async () => {
     try {
-    const API_BASE_URL = import.meta.env.VITE_API_URL || process.env.REACT_APP_API_URL || 'http://localhost:8000';
+    const API_BASE_URL = import.meta.env.VITE_API_URL || process.env.REACT_APP_API_URL || 'https://marketing-mba-backend.onrender.com';
     const response = await fetch(`${API_BASE_URL}/health`);
     const data = await response.json();
 
@@ -119,7 +118,7 @@ const MarketingAgentSimulator = () => {
       const progressPromise = progressNodes();
 
       // Make actual API call
-      const response = await fetch('http://localhost:8000/analyze', {
+      const response = await fetch('https://marketing-mba-backend.onrender.com/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

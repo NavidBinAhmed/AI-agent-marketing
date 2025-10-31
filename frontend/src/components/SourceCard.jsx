@@ -1,4 +1,5 @@
-// frontend/src/components/SourceCard.jsx
+// react component- SourceCard
+
 import { ExternalLink, Globe } from 'lucide-react';
 
 const SourceCard = ({ source, index }) => {

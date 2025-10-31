@@ -1,4 +1,5 @@
-// frontend/src/components/LoadingSpinner.jsx
+// react component- LoadingSpinner
+
 import { Loader2 } from 'lucide-react';
 
 const LoadingSpinner = ({ message = 'Analyzing...' }) => {

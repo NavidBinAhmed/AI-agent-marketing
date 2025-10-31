@@ -1,4 +1,5 @@
-// frontend/src/components/InsightCard.jsx
+// react component- InsightCard
+
 import { TrendingUp, CheckCircle2 } from 'lucide-react';
 
 const InsightCard = ({ insight, index }) => {
