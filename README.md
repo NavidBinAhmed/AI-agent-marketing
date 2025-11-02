@@ -1,4 +1,8 @@
-# Full-Stack Marketing.MBA LangGraph Agent using FastAPI, React, and Render
+# InsightFlow: Intelligence Agent 
+## Full-Stack AI Agent using LangGraph, FastAPI, React, and Render
+Your AI-powered brand & marketing growth assistant
+
+Version update: Adding LangGraph
 
 ## 1. Overview 
 
@@ -19,6 +23,7 @@ This repository contains a LangGraph-based AI agent for performing a marketing o
 ![alt text](resource/demo_agent_marketing.gif)
 
 Deployed Live [**Link**](https://magent.onrender.com/), Backend [**Link**](https://marketing-mba-backend.onrender.com/)
+
 
 ## 3. Architecture
 ### 3.1 Architecture: Full-Stack System Architecture
@@ -55,7 +60,7 @@ flowchart LR
 5. Frontend displays results.
 
 
-### 3.2 Architecture: Agent Architecture
+### 3.2 Architecture: Agent Architecture (will be updated with LangGraph)
 
 Multi-Agent Horizontal (Linear) Unidirectional Architecture
 
@@ -203,31 +208,6 @@ Timeouts and retries on external calls (tenacity), and minimal CORS configuratio
 2. [VS Code IDE](https://code.visualstudio.com/)
 3. [GitHub](https://github.com/NavidBinAhmed/)
 4. [Mermaid](https://www.mermaidchart.com/)
-5. Virtual/AI Assitants (claude, chatGPT, YouTube)
-
-
-### 7.1 Usefulness of AI Assistants: Speed, Modernization, and Reliability
-
-- Quick error handling and finding solution. Multiple solutions are provided from which the most acceptable solution was applied for a robust and fastest development
-
-- Check for security vulnerabilities. SQL injection and other threats may occur and so a thorough security analysis was done based on the best practices and advanced tentative solutions. However, most of which is associated to ‘further extension’, in a later section
-
-- Embracing what is out of idea. Learning is life-long. AI Assistants help gain a speedy learning curve easily, to the point, and on-the-go. Better than boring video tutorials or books.
-
--  `Example prompt 1`: while working with a paid old OpenAI API
-I use paid openai api which is no longer accessible. Kindly share alternative free apis that should work.
-
--  `Example prompt 2`: while interfacing and validating output on the React UI
-In FastAPI Full Stack project, one API associated with research agent works fine. But another agent’s output - analysis marketing insights/summary associated with another OpenAI API is missing. Suggest what causes the issue and recommend solution?
-
-
-### 7.2 Reasons for Choosing Specific AI Assistants
-
-- `ChatGPT`: easier to access, has a freemium version. Useful for everyday use-cases. I love it because it knows about me more than that I do. (Laughing out loud) 
-
-- `Claude.AI`: Better for software dev, as it illustrates a solution graphically. Easier to catch the underlying concepts on Claude. But very limited access in freemium version.
-
-- `Other Tools/Sites`: Google is the best friend! Search results came up with the personalized solutions in AI mode version.
 
 
 ## 8. Run the Project Locally
@@ -278,11 +258,6 @@ npm run dev (open http://localhost:3000)
 - Insights generation issue 
  - Sources listing issue, 
 and more 
-
-
-## 10. Documentation (click below to view)
-
-![alt text](resource/Documentation_NBA_MMBA.pdf)
 
 
 ```copyright@2025, Marketing.MBA```

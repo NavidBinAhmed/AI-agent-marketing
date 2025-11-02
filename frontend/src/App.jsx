@@ -16,7 +16,7 @@ const MarketingAgentSimulator = () => {
   const nodes = [
     { id: 'input', label: 'Input Processing', x: 50, y: 50 },
     { id: 'research', label: 'Web Research', x: 50, y: 150 },
-    { id: 'analysis', label: 'GPT Analysis', x: 50, y: 250 },
+    { id: 'analysis', label: 'LLM Analysis', x: 50, y: 250 },
     { id: 'synthesis', label: 'Insight Synthesis', x: 50, y: 350 },
     { id: 'output', label: 'Output Formatting', x: 50, y: 450 }
   ];
@@ -195,9 +195,9 @@ const MarketingAgentSimulator = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-            Marketing.MBA Intelligence Agent
+            InsightFlow: Intelligence Agent
           </h1>
-          <p className="text-slate-300">AI-powered marketing analysis with Google Gemini 2.5-flash and SerpAPI</p>
+          <p className="text-slate-300">Your AI-powered brand & marketing growth assistant</p>
           
           {/* Backend Status */}
           <div className="mt-4 flex items-center gap-4">
@@ -438,7 +438,7 @@ const MarketingAgentSimulator = () => {
                   <span>Execution: {finalOutput.metadata.execution_time_ms.toFixed(0)}ms</span>
                   <span>Nodes: {finalOutput.metadata.nodes_executed}</span>
                   <span>{new Date(finalOutput.metadata.timestamp).toLocaleString()}</span>
-                  <span>Copyright @2025, Marketing.MBA</span>
+                  <span>Copyright @2025, Navid Bin Ahmed</span>
                 </div>
               </div>
             </div>
@@ -450,7 +450,7 @@ const MarketingAgentSimulator = () => {
           <div className="bg-slate-800/50 backdrop-blur rounded-lg p-12 border border-purple-500/20 text-center">
             <div className="text-6xl mb-4">🤖</div>
             <h3 className="text-xl font-semibold mb-2">Ready to Analyze</h3>
-            <p className="text-slate-400">Enter your marketing query and click Execute to begin</p>
+            <p className="text-slate-400">Enter your query and click Execute Analysis to begin</p>
           </div>
         )}
       </div>
