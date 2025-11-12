@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Marketing Analysis API",
-    description="AI-powered marketing insights using OpenAI and SerpAPI",
+    description="AI-powered brand and marketing growth assistant using Google Gemini and SerpAPI",
     version="1.0.0"
 )
 
