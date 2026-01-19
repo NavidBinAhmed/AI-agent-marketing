@@ -260,5 +260,5 @@ npm run dev (open http://localhost:3000)
 and more 
 
 
-```copyright@2025, Marketing.MBA```
+```copyright@2025, InsightFlow```
 ```Dev: Navid Bin Ahmed```
